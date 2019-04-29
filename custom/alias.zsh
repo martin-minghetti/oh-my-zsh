@@ -19,8 +19,8 @@ alias c="code"
 alias c.="code ."
 
 ## NPM
-alias dev="echo 'Simon says: npm run dev' && npm run dev"
-alias bd="echo 'Simon says: npm run build' && npm run build"
+alias dev="echo '\n\n🧪 Simon says: npm run dev' && npm run dev"
+alias bd="echo '\n\n👷🏻‍ Simon says: npm run build' && npm run build"
 
 ## -------------------------------------------------------------
 ## Shortcuts
