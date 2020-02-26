@@ -20,6 +20,7 @@ alias c.="code ."
 
 ## NPM
 alias dev="echo '\n\n Simon says: npm run dev 🧪' && npm run dev"
+alias st="echo '\n\n Simon says: npm start 🧪' && npm start"
 alias bd="echo '\n\n Simon says: npm run build 👷🏻‍' && npm run build"
 
 ## -------------------------------------------------------------
@@ -98,12 +99,12 @@ bp () {
 
 ## To use: bitme projectName (without airlst-landing- )
 
-bitme () {
+bb () {
     echo '\n\n🚕  Vamos to AirLST folder';
     lst;
     echo '\n'
 
-    echo '👯  Cloning '$@' repo from Bitbucket';
+    echo '👯';
     git clone https://martin-minghetti@bitbucket.org/airlst/airlst-landing-$@.git;
     echo '\n'
 
