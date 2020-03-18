@@ -20,7 +20,7 @@ alias c.="code ."
 
 ## NPM
 alias dev="echo '\n\n Simon says: npm run dev 🥨' && npm run dev"
-alias st="echo '\n\n Simon says: npm run serve 🥨' && npm run serve"
+alias sv="echo '\n\n Simon says: npm run serve 🥨' && npm run serve"
 alias st="echo '\n\n Simon says: npm start 🥨' && npm start"
 alias bd="echo '\n\n Simon says: npm run build 👷🏻‍' && npm run build"
 alias cy="echo '\n\n Simon says: npm run cypress 🔥🔥🔥‍' && npm run cypress"
