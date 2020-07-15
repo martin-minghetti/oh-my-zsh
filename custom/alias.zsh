@@ -12,18 +12,18 @@ alias cls="clear"
 alias dir="ls -a"
 
 ## Finder
-alias finder="open ."
+alias f.="open ."
 
 ## Open in code
 alias c="code"
 alias c.="code ."
 
 ## NPM
-alias dev="echo '\n\n Simon says: npm run dev 🥨' && npm run dev"
-alias sv="echo '\n\n Simon says: npm run serve 🥨' && npm run serve"
-alias st="echo '\n\n Simon says: npm start 🥨' && npm start"
-alias bd="echo '\n\n Simon says: npm run build 👷🏻‍' && npm run build"
-alias cy="echo '\n\n Simon says: npm run cypress 🔥🔥🔥‍' && npm run cypress"
+alias dev="echo '\n\n Please npm run dev 🥨' && npm run dev"
+alias sv="echo '\n\n Please npm run serve 🥨' && npm run serve"
+alias st="echo '\n\n Please npm run start 🥨' && npm start"
+alias bd="echo '\n\n Please npm run build 🚧' && npm run build"
+alias cy="echo '\n\n Please npm run cypress 🔥🔥🔥‍' && npm run cypress"
 
 ## -------------------------------------------------------------
 ## Shortcuts
@@ -99,7 +99,7 @@ bp () {
 ## Clone a specific project from BitBucket,
 ## create a workspace folder for VS Code and open it
 
-## To use: bitme projectName (without airlst-landing- )
+## To use: bb projectName (without airlst-landing- )
 
 bb () {
     echo '\n\n🚕  Vamos to AirLST folder';
@@ -117,5 +117,10 @@ bb () {
     echo '🖖🏻  Open in VS Code';
     code landing-"$@".code-workspace;
     echo '\n'
+}
+
+## To use: al + projectName, will type airlst-landing-
+al () {
+    cd airlst-landing-$@;
 }
 
