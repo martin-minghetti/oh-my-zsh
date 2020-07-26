@@ -22,6 +22,8 @@ alias c.="code ."
 alias dev="echo '\n\n Please npm run dev 🥨' && npm run dev"
 alias sv="echo '\n\n Please npm run serve 🥨' && npm run serve"
 alias st="echo '\n\n Please npm run start 🥨' && npm start"
+alias w="echo '\n\n Please npm run watch 🥨' && npm run watch"
+alias ws="echo '\n\n Please npm run watch 🥨' && npm run watch-styles"
 alias bd="echo '\n\n Please npm run build 🚧' && npm run build"
 alias cy="echo '\n\n Please npm run cypress 🔥🔥🔥‍' && npm run cypress"
 
@@ -59,42 +61,6 @@ servus () {
     fi
     python -m SimpleHTTPServer "$@"
 }
-
-## Add a new project to BitBucket with a boilerplate,
-## example: bp newProjectName (will create a folder called "newProjectName"
-## with the boilerplate inside)
-
-## First create a new empty repo on Bitbucket, then:
-
-bp () {
-    echo '--> Cloning the Boilerplate from Bitbucket';
-    git clone https://martin-minghetti@bitbucket.org/airlst/airlst-landing-boilerplate.git;
-
-    echo '--> Renaming the boilerplate folder to '"$@";
-    mv airlst-landing-boilerplate "$@";
-
-    echo '--> Accessing '"$@"' folder';
-    cd "$@";
-
-    echo '--> Deleting .git folder';
-    rm -rf .git;
-
-    echo '--> Initializing git';
-    git init;
-
-    echo '--> git add .';
-    git add .;
-
-    echo '--> git commit -m "initial commit"';
-    git commit -m 'initial commit';
-
-    echo '--> Commiting to repository https://martin-minghetti@bitbucket.org/airlst/'"$@"'.git';
-    git remote add origin https://martin-minghetti@bitbucket.org/airlst/"$@".git;
-
-    echo '--> Pushing"';
-    git push -u origin master
-}
-
 
 ## Clone a specific project from BitBucket,
 ## create a workspace folder for VS Code and open it
