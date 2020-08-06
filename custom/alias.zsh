@@ -22,10 +22,14 @@ alias c.="code ."
 alias dev="echo '\n\n Please npm run dev 🥨' && npm run dev"
 alias sv="echo '\n\n Please npm run serve 🥨' && npm run serve"
 alias st="echo '\n\n Please npm run start 🥨' && npm start"
-alias w="echo '\n\n Please npm run watch 🥨' && npm run watch"
-alias ws="echo '\n\n Please npm run watch 🥨' && npm run watch-styles"
+alias w="echo '\n\n Please npm run watch 🦄' && npm run watch"
+alias ws="echo '\n\n Please npm run watch-styles 🦄' && npm run watch-styles"
 alias bd="echo '\n\n Please npm run build 🚧' && npm run build"
 alias cy="echo '\n\n Please npm run cypress 🔥🔥🔥‍' && npm run cypress"
+
+## Docker
+alias dcd="docker-compose down"
+alias dcu="docker-compose up -d"
 
 ## -------------------------------------------------------------
 ## Shortcuts
